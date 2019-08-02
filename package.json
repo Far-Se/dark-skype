@@ -1,0 +1,16 @@
+{
+  "name": "skype-edit",
+  "version": "1.0.0",
+  "main": "syke-modify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "asar": "^0.14.3",
+    "load-json-file": "^5.0.0"
+  }
+}
