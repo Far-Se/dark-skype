@@ -5,7 +5,11 @@
 
 ### Install
 
-1. Install **[ASAR](https://github.com/electron/asar)**
+1. Install **[ASAR](https://github.com/electron/asar)** and js-beautify :
+```
+npm i -g asar
+npm i -g js-beautify
+```
 2. Close Skype 
 3. Open in editor `run.bat` and change skype path if you have a diferent one. Do the same on `skype.js`
 4. run `npm install`
