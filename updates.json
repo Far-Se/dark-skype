@@ -6,13 +6,13 @@
             "/#2B333B/gi": "#1f1f1f",
             "/EmoticonStroke = \"\"/gi": "EmoticonStroke = \" \"",
 			"/name: \"Skype_Notification\",/gi" : "name: \"Skype_Notificationee\",",
-			"/this\\._api\\.on\\(\"window-unmaximized\", function\\(\\) {/gi" : "this._api.on('skype-notification', function() {var audio = new Audio('media/Skype_Notification.m4a');audio.volume = 0.5;audio.play();}),this._api.on('window-unmaximized', function() {"
+			"/this\\._api\\.on\\(\"window-unmaximized\", \\(\\) => \\{/gi" : "this._api.on('skype-notification', function() {var audio = new Audio('media/Skype_Notification.m4a');audio.volume = 0.5;audio.play();}),this._api.on('window-unmaximized', function() {"
         },
         "appendFile": "./scripts.js"
     },
     "MainWindow.js": {
         "replace": {
-            "/'show': false/ig" : "'show': false,titleBarStyle: 'hidden', frame: false",
+            "show: false/ig" : "show: false,titleBarStyle: 'hidden', frame: false",
 			"/this._badgeCount = count;/ig" : "this._badgeCount = count; if(count > 0){this.window.flashFrame(true);this.webContents.send('skype-notification');}else this.window.flashFrame(false);"
 			}
     },

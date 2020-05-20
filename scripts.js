@@ -1,7 +1,7 @@
-document.getElementById('close').onclick = ()=>{ electronApi.windowMinimize()}
+//document.getElementById('close').onclick = ()=>{ electronApi.windowMinimize()}
 window.onload = function () {
   window.onfocus = function () {
-    var etextarea = document.querySelector('[aria-label="Type a message here"]');
+    var etextarea = document.querySelector('[aria-label="Type a message"]');
     etextarea && etextarea.focus();
   };
 };
